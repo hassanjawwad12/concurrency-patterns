@@ -1,7 +1,6 @@
 # concurrency-patterns
-All the concurrency patterns in go
+Three main concurrency patterns in go are:
 
-Three main concurrency patterns in go are 
 ## for-select loop 
 * Buffered channel is made if we give a capacity in the make
 * For asynchronous communication we need to have a buffered channel
@@ -10,4 +9,8 @@ Three main concurrency patterns in go are
 
 ## Done channels 
 * Mechanism for main go routine to cancel the infinitely running go routine
+<img src="channels.png"/>
+
 ## Pipelines
+* Communication is syncronous in a pipeline 
+<img src="pipeline.png"/>
