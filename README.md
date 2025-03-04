@@ -9,4 +9,5 @@ Three main concurrency patterns in go are
 * With buffered channel we use a queue like functionality where we can send data to channel and forget upto the alloted capacity 
 
 ## Done channels 
+* Mechanism for main go routine to cancel the infinitely running go routine
 ## Pipelines
