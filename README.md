@@ -1,7 +1,7 @@
 # concurrency-patterns
 Three main concurrency patterns in go are:
 
-## for-select loop 
+## For-select loop 
 * Buffered channel is made if we give a capacity in the make
 * For asynchronous communication we need to have a buffered channel
 * An unbuffered channel provides a guarante that an exchange between 2 go-routines is performed at the instant the send and receive take place : a receiving goroutine have to wait for the sending goroutine (syncronous communication)
