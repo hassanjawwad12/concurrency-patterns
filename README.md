@@ -24,3 +24,8 @@ Three main concurrency patterns in go are:
 * Even if we have an infnite loop, it will only generate value based on how receiving goroutine is processing
 <img src="syncronous-channels.png"/>
 
+## Fan-in Fan-out
+* Sync makes 2 unbuffered channels blocking as one channel have to wait for the other channel to receive the stream. 
+* This can be a time-taking process thus we use fan-in and fan-out which means we run the channels in a go-routine concurrently.
+<img src="fan-in-out.png"/>
+
