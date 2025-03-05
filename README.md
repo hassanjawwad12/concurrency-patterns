@@ -14,3 +14,7 @@ Three main concurrency patterns in go are:
 ## Pipelines
 * Communication is syncronous in a pipeline 
 <img src="pipeline.png"/>
+
+## Generators
+* A way for us to generate a stream of data on a channel 
+* Use generics in generator functions so it can be used for functions which return any type
