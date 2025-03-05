@@ -18,3 +18,9 @@ Three main concurrency patterns in go are:
 ## Generators
 * A way for us to generate a stream of data on a channel 
 * Use generics in generator functions so it can be used for functions which return any type
+
+## Syncronous Channels
+* Communication over an unbuffered channel causes Sending and Receiving goroutine to syncronize 
+* Even if we have an infnite loop, it will only generate value based on how receiving goroutine is processing
+<img src="syncronous-channels.png"/>
+
